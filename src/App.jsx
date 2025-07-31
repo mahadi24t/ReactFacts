@@ -2,6 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import HeaderComponent from './Header'
+import SectionComponent1 from './Comp1'
+import SectionComponent2 from './comp2'
+import FooterComponent from './footer'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -44,26 +49,9 @@ root.render(
   </>
 ) 
 
-function HeaderComponent() {
-  return(
-    <header><img src="src/assets/react-logo.png" width="40px" alt="React logo" /></header>
-  )
-}
 
-function SectionComponent1(){
-  return(
-    <main>
-      <h1>Fun facts about React!</h1>
-      <ul>
-        <li>Was first released in 2013</li>
-        <li>Was originally created by Jordan Walke</li>
-        <li>Has well over 200K stars on GitHub</li>
-        <li>Is maintained by Meta</li>
-        <li>Powers thousands of enterprise apps, including mobile apps</li>
-      </ul>
-    </main>
-  )
-}
+
+
 function MainPage() {
   return (
     <>
@@ -75,25 +63,5 @@ function MainPage() {
   )
 }
 
-function SectionComponent2() {
-  return (
-    <>
-      <h1>Why I am excited for Learning React!</h1>
-      <ol>
-        <li>React Powers Real-World Web Apps</li>
-        <li>Component-Based Thinking Mirrors Cognitive Modularity</li>
-        <li>React Ecosystem = Toolbox for Everything</li>
-        <li>React Makes Projects Globally Accessible</li>
-        <li>React Develops Intuitive Problem Solving</li>
-      </ol>
-    </>
-  )
-}
 
-function FooterComponent(){
-  return(
-    <footer><small>
-      © 2025 developed by Mahadi Hasan. All rights reserved.
-      </small></footer>
-  )
-}
+
