@@ -41,14 +41,17 @@ const root = createRoot(document.querySelector("#root"))
 root.render(
   <>
     <MainPage />
-    <Page />
-    <FooterPage />
   </>
-)
+) 
 
-function MainPage() {
-  return (
-    <div><header><img src="src/assets/react-logo.png" width="40px" alt="React logo" /></header>
+function HeaderComponent() {
+  return(
+    <header><img src="src/assets/react-logo.png" width="40px" alt="React logo" /></header>
+  )
+}
+
+function SectionComponent1(){
+  return(
     <main>
       <h1>Fun facts about React!</h1>
       <ul>
@@ -59,13 +62,22 @@ function MainPage() {
         <li>Powers thousands of enterprise apps, including mobile apps</li>
       </ul>
     </main>
-    </div>
+  )
+}
+function MainPage() {
+  return (
+    <>
+    <HeaderComponent/>
+    <SectionComponent1/>
+    <SectionComponent2/>
+    <FooterComponent/>
+    </>
   )
 }
 
-function Page() {
+function SectionComponent2() {
   return (
-    <section>
+    <>
       <h1>Why I am excited for Learning React!</h1>
       <ol>
         <li>React Powers Real-World Web Apps</li>
@@ -74,11 +86,11 @@ function Page() {
         <li>React Makes Projects Globally Accessible</li>
         <li>React Develops Intuitive Problem Solving</li>
       </ol>
-    </section>
+    </>
   )
 }
 
-function FooterPage(){
+function FooterComponent(){
   return(
     <footer><small>
       © 2025 developed by Mahadi Hasan. All rights reserved.
